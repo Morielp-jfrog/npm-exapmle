@@ -5,7 +5,7 @@
     "start": "node helloworld"
   },
   "dependencies": {
-    "send": "^0.16.3",
+    "send": "^0.16.1",
     "log4j": "1.0.0"
   },
   "devDependencies": {
