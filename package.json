@@ -7,7 +7,7 @@
   "dependencies": {
     "send": "^0.16.2",
     "log4j": "1.0.0",
-    "jettison": "0.1.0",
+    "parse-url": "8.0.0",
     "text": "0.1.0",
     "terser": "5.37.0"
   },
