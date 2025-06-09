@@ -22,8 +22,8 @@ jobs:
 
       - name: Run JFrog CLI
         run: |
-          export BUILD_NAME: "npm-buld-oidc"
-          export BUILD_NUMBER: 21
+          export BUILD_NAME="npm-buld-oidc"
+          export BUILD_NUMBER="21"
           # Ping the server
           jf rt ping
           # Collect environment variables for the build
@@ -31,4 +31,4 @@ jobs:
           # Collect VCS details from git and add them to the build
           jf rt bag $BUILD_NAME $BUILD_NUMBER
           # Publish build info
-          jf rt bp npm-buld-oidc 21
+          jf rt bp $BUILD_NAME $BUILD_NUMBER
