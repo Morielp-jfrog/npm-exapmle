@@ -27,8 +27,8 @@ jobs:
           # Ping the server
           jf rt ping
           # Collect environment variables for the build
-          jf rt bce --build-name npm-buld-oidc --build-number 21
+          jf rt bce --build-name "npm-buld-oidc" --build-number "21"
           # Collect VCS details from git and add them to the build
-          jf rt bag --build-name npm-buld-oidc --build-number 21
+          jf rt bag npm-buld-oidc 21
           # Publish build info
-          jf rt bp --build-name npm-buld-oidc --build-number 21
+          jf rt bp npm-buld-oidc 21
