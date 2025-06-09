@@ -1,4 +1,4 @@
-name: "Setup JFrog CLI Example!"
+name: "npm-buld-oidc"
 on: push
 
 jobs:
@@ -27,8 +27,8 @@ jobs:
           # Ping the server
           jf rt ping
           # Collect environment variables for the build
-          jf rt bce --build-name "npm-buld-oidc" --build-number 21
+          jf rt bce 
           # Collect VCS details from git and add them to the build
-          jf rt bag $BUILD_NAME $BUILD_NUMBER
+          jf rt bag 
           # Publish build info
-          jf rt bp $BUILD_NAME $BUILD_NUMBER
+          jf rt bp 
