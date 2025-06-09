@@ -1,4 +1,4 @@
-Anothersmall change!!!!
+Anothersmall change
 # NPM Example
 
 ## Overview
