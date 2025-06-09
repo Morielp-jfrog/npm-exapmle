@@ -27,8 +27,8 @@ jobs:
           # Ping the server
           jf rt ping
           # Collect environment variables for the build
-          jf rt bce 
+          jf rt bce --build-name $BUILD_NAME --build-number $BUILD_NUMBER
           # Collect VCS details from git and add them to the build
-          jf rt bag
+          jf rt bag --build-name $BUILD_NAME --build-number $BUILD_NUMBER
           # Publish build info
-          jf rt bp
+          jf rt bp --build-name $BUILD_NAME --build-number $BUILD_NUMBER
