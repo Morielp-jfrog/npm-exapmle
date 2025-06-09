@@ -1,5 +1,7 @@
 name: "npm-buld-oidc-test"
-on: push
+on: 
+  workflow_dispatch: # The repository will be scanned on demand
+
 
 jobs:
   build:
