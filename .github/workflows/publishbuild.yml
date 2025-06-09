@@ -1,4 +1,4 @@
-name: "npm-buld-oidc"
+name: "npm-buld-oidc/test"
 on: push
 
 jobs:
