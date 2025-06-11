@@ -10,7 +10,8 @@
     "send": "^0.16.2",
     "terser": "5.37.0",
     "text": "0.1.0",
-    "salesforce-app": "1.0.0"
+    "salesforce-app": "1.0.0",
+    "@salesforce/eslint-config-lwc": "3.7.2"
   },
   "devDependencies": {
     "debug": "^4.1.1"
