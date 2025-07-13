@@ -20,7 +20,7 @@ jobs:
 
           # JFrog Platform access token
           JF_ACCESS_TOKEN: ${{ secrets.RT_ACCESS_TOKEN }}
-          fail_build: false
+         
 
           # Basic authentication credentials
           ## JF_USER: ${{ secrets.JF_USER }}
@@ -39,4 +39,4 @@ jobs:
           jf rt bag 
           # Publish build info
           jf rt bp 
-          jf bs
+          jf bs  --fail=false
