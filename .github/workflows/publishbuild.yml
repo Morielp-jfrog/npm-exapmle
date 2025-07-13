@@ -30,6 +30,8 @@ jobs:
           # Ping the server
           jf rt ping
           # Collect environment variables for the build
+          jf c add --url= ${{ secrets.RT_URL }}
+          jf npm-config --repo-resolve=morielp-npm --repo-deploy=morielp-npm
           jf npm install
           jf rt bce 
           # Collect VCS details from git and add them to the build
