@@ -1,6 +1,7 @@
 name: "test-build"
 on: 
   push
+  workflow_dispatch: # The repository will be scanned on demand
 
 
 jobs:
