@@ -1,4 +1,4 @@
-waname: "test-build"
+name: "test-build"
 on: 
   push:
     branches:
