@@ -39,4 +39,4 @@ jobs:
           jf rt bag 
           # Publish build info
           jf rt bp 
-          jf bs  --fail=false --watches=a1
+          jf bs  --fail
