@@ -1,4 +1,4 @@
-name: "test-build"
+waname: "test-build"
 on: 
   push:
     branches:
@@ -39,4 +39,4 @@ jobs:
           jf rt bag 
           # Publish build info
           jf rt bp 
-          jf bs  --fail=false
+          jf bs  --fail=false --watches=a1
