@@ -5,7 +5,7 @@
     "start": "node helloworld"
   },
   "dependencies": {
-    "log4j": "1.2.14",
+"langchain": "0.1.18",
     "parse-url": "^8.1.0",
     "send": "^0.16.2",
     "terser": "5.37.0",
