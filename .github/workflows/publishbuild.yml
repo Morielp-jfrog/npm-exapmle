@@ -40,4 +40,7 @@ jobs:
           # Publish build info
           jf rt bp 
           jf bs 
-          jf xr cl /api/v1/violations -H 'Content-Type: application/json' -d '{ "filters": { "watch_name": "a1", "resources": { "builds": [ { "name": "test-build","number": "49"}]}},"pagination": {"order_by": "created","direction": "asc","limit": 100,"offset": 1}}'
+          # jf xr cl /api/v1/violations -H 'Content-Type: application/json' -d '{ "filters": { "watch_name": "a1", "resources": { "builds": [ { "name": "test-build","number": "49"}]}},"pagination": {"order_by": "created","direction": "asc","limit": 100,"offset": 1}}'
+          # jf xr cl /api/v1/violations -H 'Content-Type: application/json' -d '{ "filters": { "watch_name": "a1", "resources": { "builds": [ { "name": "test-build","number": "49"}]}},"pagination": {"order_by": "created","direction": "asc","limit": 100,"offset": 1}}'
+          jf xr cl /xray/api/v2/ci/build/test-build/52
+          jf xr cl /xray/api/v2/ci/build/test-build/49
