@@ -1,4 +1,4 @@
-Another small change- changed policy to skip not applicable.
+Another small change- removed watch fron config.
 # NPM Example
 
 ## Overview
