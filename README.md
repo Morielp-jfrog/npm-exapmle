@@ -1,4 +1,4 @@
-Another small change- removed ignore rule.
+Another small change- added API ignore rule by XRAY ID.
 # NPM Example
 
 ## Overview
