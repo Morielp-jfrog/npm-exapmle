@@ -1,4 +1,4 @@
-Another small change- added API ignore rule by XRAY ID.
+Another small change- added API ignore rule by XRAY ID, now trying PR scan.
 # NPM Example
 
 ## Overview
