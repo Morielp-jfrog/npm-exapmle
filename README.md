@@ -1,4 +1,4 @@
-Another small change- changed policy to skip not applicable.
+Another small change- changed policy to skip not applicable .
 # NPM Example
 
 ## Overview
