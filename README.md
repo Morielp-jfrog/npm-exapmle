@@ -1,4 +1,4 @@
-Anothersmall xchange<#.
+Another small change- removed ignore rule.
 # NPM Example
 
 ## Overview
