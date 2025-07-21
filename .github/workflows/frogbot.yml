@@ -2,12 +2,10 @@ name: "Frogbot Security Scan"
 
 on:
   pull_request_target: 
-    types: [opened, synchronize] # Triggers scan-pr flow for every opened/updated pull request
+    types: [opened, reopened] # Triggers scan-pr flow for every opened/updated pull request
   push: # Triggers scan-repo flow for every push to the specified branches
     branches:
-      - main
-  schedule:
-    - cron: "8 * * * *"   # The repository will be scanned once a day at 00:00 GMT.
+      - Morielp-jfrog-patch-7
   workflow_dispatch: # The repository will be scanned on demand
 
 permissions:
@@ -15,7 +13,6 @@ permissions:
   contents: write
   security-events: write
   # [Mandatory If using OIDC authentication protocol instead of JF_ACCESS_TOKEN]
-  id-token: write
 
 jobs:
   frogbot-scan:
@@ -35,9 +32,11 @@ jobs:
           JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
           JF_GIT_TOKEN: ${{ secrets.JF_GIT_TOKEN }}
           JF_GIT_BASE_BRANCH: ${{ matrix.branch }}    # For repository scan action
-          JF_INCLUDE_ALL_VULNERABILITIES: "true"
-          JF_FAIL: "false"
-          JF_WATCHES: "morielp-1"
+          #JF_INCLUDE_ALL_VULNERABILITIES: "true"
+          #JF_FAIL: "false"
+          #JF_WATCHES: "morielp-1"
           JFROG_CLI_LOG_LEVEL: DEBUG
+          JF_MIN_SEVERITY: "Critical"
+
 
           
