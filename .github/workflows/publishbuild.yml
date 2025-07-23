@@ -37,6 +37,7 @@ jobs:
           jf rt bce 
           # Collect VCS details from git and add them to the build
           jf rt bag 
+          jf audit --watches "all_cves"
           # Publish build info
           jf rt bp 
           jf bs 
