@@ -5,7 +5,7 @@ on:
     types: [opened, synchronized] # Triggers scan-pr flow for every opened/updated pull request
   push: # Triggers scan-repo flow for every push to the specified branches
     branches:
-      - Morielp-jfrog-patch-7
+      - Main
   workflow_dispatch: # The repository will be scanned on demand
 
 permissions:
@@ -36,7 +36,6 @@ jobs:
           #JF_FAIL: "false"
           JF_WATCHES: "morielp-1"
           JFROG_CLI_LOG_LEVEL: DEBUG
-          JF_MIN_SEVERITY: "Critical"
 
 
           
