@@ -36,7 +36,9 @@ jobs:
           JF_FAIL: "false"
           #JF_WATCHES: "morielp-1"
           JFROG_CLI_LOG_LEVEL: DEBUG
-          JF_REQUIREMENTS_FILE: pypi/requirements.txt
+          JF_REQUIREMENTS_FILE: ../../pypi/requirements.txt
+        with: 
+          version: 2.73.0  
          
 
 
