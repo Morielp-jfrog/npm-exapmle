@@ -38,7 +38,7 @@ jobs:
           JFROG_CLI_LOG_LEVEL: DEBUG
           JF_REQUIREMENTS_FILE: ../../pypi/requirements.txt
         with: 
-          version: 2.201.1  
+          version: v2.201.1  
          
 
 
