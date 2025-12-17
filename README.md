@@ -1,4 +1,4 @@
-Another small change- for commit scan.
+Another small change- for commit scans.
 
 # NPM Example
 
