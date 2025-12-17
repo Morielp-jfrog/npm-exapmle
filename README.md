@@ -1,4 +1,4 @@
-Another small change- changed policy.
+Another small change- for commit scan
 
 # NPM Example
 
