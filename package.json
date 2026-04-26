@@ -5,7 +5,6 @@
     "start": "node helloworld"
   },
   "dependencies": {
-    "@langchain/community": "0.2.9",
     "parse-url": "^8.1.0",
     "send": "^0.16.2",
     "terser": "5.37.0",
