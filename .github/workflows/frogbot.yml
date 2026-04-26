@@ -34,7 +34,7 @@ jobs:
           JF_GIT_BASE_BRANCH: ${{ matrix.branch }}    # For repository scan action
           JF_INCLUDE_ALL_VULNERABILITIES: "true"
           JF_FAIL: "false"
-          JF_WATCHES: "morielp-webhhok"
+          #JF_WATCHES: "morielp-webhhok"
           JFROG_CLI_LOG_LEVEL: DEBUG
           #JF_REQUIREMENTS_FILE: "./pypi/requirements.txt"
          
