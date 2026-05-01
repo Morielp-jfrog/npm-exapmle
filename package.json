@@ -1,6 +1,6 @@
 {
   "name": "frogbot-stress-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Engineered to maximize Frogbot scan times via extreme disk I/O and CVE graph complexity",
   "dependencies": {
     "aws-sdk-800": "npm:aws-sdk@~2.800.0",
