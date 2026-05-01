@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   frogbot-scan:
-    runs-on: self-hosted
+    runs-on: windows-2022
     strategy:
       matrix:
         # The repository scanning will be triggered periodically on the following branches.
@@ -36,8 +36,8 @@ jobs:
           JF_FAIL: "false"
           #JF_WATCHES: "morielp-webhhok"
           JFROG_CLI_LOG_LEVEL: DEBUG
-          JFROG_CLI_BYPASS_CERTIFICATE_VERIFICATION: true
-          JF_RELEASES_REPO: "morielp-genric-cache"
+          #JFROG_CLI_BYPASS_CERTIFICATE_VERIFICATION: true
+          #JF_RELEASES_REPO: "morielp-genric-cache"
           #JF_REQUIREMENTS_FILE: "./pypi/requirements.txt"
          
 
