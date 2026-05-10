@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   frogbot-scan:
-    runs-on: windows-2022
+    runs-on: self-hosted
     strategy:
       matrix:
         # The repository scanning will be triggered periodically on the following branches.
