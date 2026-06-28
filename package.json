@@ -1,27 +1,9 @@
 {
-  "name": "npm-example",
-  "version": "0.0.3",
-  "scripts": {
-    "start": "node helloworld"
-  },
+  "name": "frogbot-branch-test",
+  "version": "1.0.0",
+  "description": "Engineered to maximize graph traversal and CVE DB lookups by forcing massive, non-deduplicatable transitive dependency trees.",
   "dependencies": {
-"langchain": "0.1.18",
-    "parse-url": "^8.1.0",
-    "send": "^0.16.2",
-    "terser": "5.37.0",
-    "text": "0.1.0",
-    "salesforce-app": "1.0.0",
-    "@salesforce/eslint-config-lwc": "3.7.2",
-    "200": "^0.0.1",
-    "aws-sdk": "^1.0.0",
-    "brace-expansion": "^2.0.2",
-    "cookie-parse": "^0.4.0",
-    "cookie-parser": "^1.4.3",
-    "ejs": "^3.1.10",
-    "electron-to-chromium": "^1.5.170",
-    "express": "^4.19.1"
-  },
-  "devDependencies": {
-    "debug": "^4.1.1"
+    "lodash": "^4.17.23",
+    "send": "^0.16.2"
   }
 }
