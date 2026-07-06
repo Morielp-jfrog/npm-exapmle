@@ -17,6 +17,7 @@ permissions:
 jobs:
   frogbot-scan:
     runs-on: self-hosted
+    environment: frogbot
     strategy:
       matrix:
         # The repository scanning will be triggered periodically on the following branches.
