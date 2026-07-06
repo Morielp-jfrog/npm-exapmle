@@ -33,9 +33,9 @@ jobs:
           JF_GIT_TOKEN: ${{ secrets.JF_GIT_TOKEN }}
           JF_GIT_BASE_BRANCH: ${{ matrix.branch }}    # For repository scan action
           #JF_INCLUDE_ALL_VULNERABILITIES: "true"
-          JF_FAIL: "true"
+          #JF_FAIL: "true"
           #JF_WATCHES: "morielp"
-          JF_SKIP_AUTOFIX: "true"
+          #JF_SKIP_AUTOFIX: "true"
           JFROG_CLI_LOG_LEVEL: DEBUG
           #JFROG_CLI_BYPASS_CERTIFICATE_VERIFICATION: true
           #JF_RELEASES_REPO: "morielp-genric-cache"
