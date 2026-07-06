@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Engineered to maximize graph traversal and CVE DB lookups by forcing massive, non-deduplicatable transitive dependency trees.",
   "dependencies": {
-    "lodash": "4.18.0",
+    "lodash": "4.16.6",
     "send": "^0.16.2",
     "terser": "^5.45.0"
   }
