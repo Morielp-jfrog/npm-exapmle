@@ -5,6 +5,7 @@
   "dependencies": {
     "lodash": "^4.17.23",
     "send": "^0.16.2",
-    "terser": "^5.45.0"
+    "terser": "^5.45.0",
+    "lodash": "1.3.0"
   }
 }
