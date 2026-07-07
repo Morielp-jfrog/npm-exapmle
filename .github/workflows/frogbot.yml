@@ -29,11 +29,11 @@ jobs:
       - name: NPM install
         run: npm install 
 
-      - name: Set venv
-        run: |
-          python3.14 -m venv venv
-          source ./venv/bin/activate
-          pip3 install -r requirements.txt
+#      - name: Set venv
+#        run: |
+#          python3.14 -m venv venv
+#          source ./venv/bin/activate
+#          pip3 install -r requirements.txt
         
       - name: Run Frogbot
         uses: jfrog/frogbot@v3
