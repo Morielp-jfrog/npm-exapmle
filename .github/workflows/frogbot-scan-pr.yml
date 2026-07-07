@@ -22,10 +22,15 @@ jobs:
 
       - name: npm install
         run: npm install
+        
       - uses: jfrog/frogbot@v3
         env:
           JF_URL: ${{ secrets.JF_URL }}
           JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
           JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          JF_CLI_LOG_LEVEL: DEBUG
+          JF_WATCHES: "morielp-frogbot"
+          JF_SKIP_AUTOFIX: "true"
+          JFROG_CLI_LOG_LEVEL: DEBUG
+          JF_UPLOAD_PR_SECURITY_RESULTS_TO_VCS: "true"
+          JF_PR_SHOW_SECRETS_COMMENTS: "true"
 
