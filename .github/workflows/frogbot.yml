@@ -30,9 +30,7 @@ jobs:
         run: |
           python3.14 -m venv venv
           source ./venv/bin/activate
-        
-      - name: Install dependencies
-        run: pip3 install -r requirements.txt
+          pip3 install -r requirements.txt
         
       - name: Run Frogbot
         uses: jfrog/frogbot@v3
