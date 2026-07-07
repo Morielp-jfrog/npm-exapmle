@@ -1,8 +1,17 @@
 {
-  "name": "frogbot",
+  "name": "my-package-testing-1",
   "version": "1.0.0",
-  "description": "Test",
+  "description": "Custom scoped npm package",
+  "main": "index.js",
+  "files":[
+    "index.js",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "echo Building package..."
+  },
   "dependencies": {
     "lodash": "4.18.0"
+
   }
 }
