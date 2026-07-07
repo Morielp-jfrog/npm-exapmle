@@ -14,11 +14,11 @@ jobs:
     environment: frogbot
     steps:
     
-      - name: pip install
-        run: |
-          python3.14 -m venv venv
-          source ./venv/bin/activate
-          pip3 install -r requirements.txt
+  #    - name: pip install
+  #      run: |
+  #        python3.14 -m venv venv
+  #        source ./venv/bin/activate
+  #        pip3 install -r requirements.txt
 
       - name: npm install
         run: npm install
