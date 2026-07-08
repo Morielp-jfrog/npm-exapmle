@@ -1,2 +1,2 @@
-TEST_TOKEN: "jabvsz/2eqfA!!"
+CUSTOM_TOKEN: "jabvsz/2eqfA!!"
 API_TOKEN: "jhasvyugmqqq!@aas33"
