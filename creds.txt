@@ -1,2 +1,3 @@
 CUSTOM_TOKEN: "jabvsz/2eqfA!!"
 API_TOKEN: "jhasvyugmqqq!@aas33"
+DEVELOPER_USER_CREDENTIALS="123"
