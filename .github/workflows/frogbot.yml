@@ -53,6 +53,7 @@ jobs:
           JFROG_CLI_LOG_LEVEL: DEBUG
           JF_UPLOAD_PR_SECURITY_RESULTS_TO_VCS: "true"
           JF_PR_SHOW_SECRETS_COMMENTS: "true"
+          ENABLE_CUSTOM_SECRETS_SCANNER: "true"
           #JFROG_CLI_BYPASS_CERTIFICATE_VERIFICATION: true
           #JF_RELEASES_REPO: "morielp-genric-cache"
           #JF_REQUIREMENTS_FILE: "./pypi/requirements.txt"
