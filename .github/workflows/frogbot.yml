@@ -2,12 +2,10 @@ name: "Frogbot Security Scan"
 
 on:
   pull_request_target: 
-    types: [opened, synchronize] # Triggers scan-pr flow for every opened/updated pull request
+    types: [opened, synchronized] # Triggers scan-pr flow for every opened/updated pull request
   push: # Triggers scan-repo flow for every push to the specified branches
     branches:
-      - test-1
-  schedule:
-    - cron: "8 * * * *"   # The repository will be scanned once a day at 00:00 GMT.
+      - main
   workflow_dispatch: # The repository will be scanned on demand
 
 permissions:
@@ -15,17 +13,30 @@ permissions:
   contents: write
   security-events: write
   # [Mandatory If using OIDC authentication protocol instead of JF_ACCESS_TOKEN]
-  id-token: write
 
 jobs:
   frogbot-scan:
     runs-on: self-hosted
+    #environment: frogbot
     strategy:
       matrix:
         # The repository scanning will be triggered periodically on the following branches.
-        branch: ["test-1"]
+        branch: ["main"]
     steps:
-      - uses: jfrog/frogbot@v2
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: NPM install
+        run: npm install 
+
+#      - name: Set venv
+#        run: |
+#          python3.14 -m venv venv
+#          source ./venv/bin/activate
+#          pip3 install -r requirements.txt
+        
+      - name: Run Frogbot
+        uses: jfrog/frogbot@v3
         # [Mandatory if using OIDC authentication protocol instead of JF_ACCESS_TOKEN]
         # Insert to oidc-provider-name the 'Provider Name' defined in the OIDC integration configured in the JPD
         #with:
@@ -36,8 +47,17 @@ jobs:
           JF_GIT_TOKEN: ${{ secrets.JF_GIT_TOKEN }}
           JF_GIT_BASE_BRANCH: ${{ matrix.branch }}    # For repository scan action
           JF_INCLUDE_ALL_VULNERABILITIES: "true"
-          JF_FAIL: "false"
-          #JF_WATCHES: "morielp-1"
+          #JF_FAIL: "true"
+          JF_WATCHES: "morielp-frogbot"
+          JF_SKIP_AUTOFIX: "true"
           JFROG_CLI_LOG_LEVEL: DEBUG
+          JF_UPLOAD_PR_SECURITY_RESULTS_TO_VCS: "true"
+          JF_PR_SHOW_SECRETS_COMMENTS: "true"
+          ENABLE_CUSTOM_SECRETS_SCANNER: "true"
+          #JFROG_CLI_BYPASS_CERTIFICATE_VERIFICATION: true
+          #JF_RELEASES_REPO: "morielp-genric-cache"
+          #JF_REQUIREMENTS_FILE: "./pypi/requirements.txt"
+         
+
 
           

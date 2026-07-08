@@ -1,4 +1,5 @@
-Another small change- removed ignore rule.
+Another small change- for commit scans.
+
 # NPM Example
 
 ## Overview
