@@ -5,7 +5,7 @@ on:
     types: [opened, synchronized] # Triggers scan-pr flow for every opened/updated pull request
   push: # Triggers scan-repo flow for every push to the specified branches
     branches:
-      - main
+      - test-3
   workflow_dispatch: # The repository will be scanned on demand
 
 permissions:
@@ -21,7 +21,7 @@ jobs:
     strategy:
       matrix:
         # The repository scanning will be triggered periodically on the following branches.
-        branch: ["main"]
+        branch: ["test-3"]
     steps:
       - name: Checkout
         uses: actions/checkout@v6
