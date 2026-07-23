@@ -24,7 +24,7 @@ jobs:
         branch: ["main"]
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: NPM install
         run: npm install 
@@ -36,7 +36,7 @@ jobs:
 #          pip3 install -r requirements.txt
         
       - name: Run Frogbot
-        uses: jfrog/frogbot@v2
+        uses: jfrog/frogbot@v3
         # [Mandatory if using OIDC authentication protocol instead of JF_ACCESS_TOKEN]
         # Insert to oidc-provider-name the 'Provider Name' defined in the OIDC integration configured in the JPD
         #with:
